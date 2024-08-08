@@ -43,6 +43,7 @@ body, html, .header, header, nav, footer {
 .header .contact-info {
     text-align: left;
     margin-right: 0;
+    padding:20px;
 }
 
 .header .contact-info span {

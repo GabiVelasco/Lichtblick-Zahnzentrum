@@ -36,11 +36,14 @@ body, html, .header, header, nav, footer {
 .header .logo {
     display: flex;
     align-items: center;
+   
 }
 
 .header .logo img {
     height: fit-content;
     margin-right: 10px;
+    width:fit-content;
+    
 }
 
 .header .contact-info {
@@ -250,6 +253,117 @@ footer a {
 }
   
 
+/* SLIDES */
+
+/* Testimonial Section */
+.testimonial-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  
+}
+
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.testimonial-slider {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.6s ease;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  padding:20px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide:hover {
+  transform: scale(1.02);
+}
+
+.slide p {
+  font-size: 1.4rem;
+  line-height: 1.6em;
+  color: #555;
+  font-family: "Gupter", serif;
+}
+
+.slide h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #2b5e94;
+  font-family: "Gupter", serif;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls label {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #007BFF;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .slide p {
+      font-size: 1.2rem;
+  }
+  .slide h3 {
+      font-size: 1rem;
+  }
+}
+/* sLIDES ENDE */
+
 
 @media screen and (max-width: 960px) {
     .header {
@@ -320,6 +434,13 @@ footer a {
   .flex-item-right, .flex-item-left {
     flex: 100%;
   }
+
+  .header .logo img {
+    height: fit-content;
+    margin-right: 10px;
+    width:auto; max-width: 40%;
+    min-width: 250px;
+}
 }
 
 
@@ -329,6 +450,15 @@ html, body, .header, header, nav, footer, .footer {
   margin:0;
   padding:0;
   
+}
+.references-container {
+  justify-content:center;
+  display: block;
+  text-align:center;
+  position:relative;
+  width:100%;
+  
+
 }
 
 .references h1 {

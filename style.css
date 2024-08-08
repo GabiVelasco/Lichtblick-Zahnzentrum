@@ -90,7 +90,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -99,7 +99,6 @@ nav ul li a {
     font-weight: lighter;
     padding: 10px 0;
     display: block;
-    font-size: smaller;
 }
 
 nav ul li a:hover {
@@ -126,6 +125,12 @@ footer p {
     font-weight: 100;
     letter-spacing: 0.2cap;
 }
+
+footer a {
+  color: white;
+}
+
+
 
 .footer-container {
     padding: 10px;
@@ -192,7 +197,7 @@ footer p {
 
 }
 .herotext-container p {
-  font-size:20px;
+  font-size:30px;
   text-align:left;
   color:white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Schatteneffekt */

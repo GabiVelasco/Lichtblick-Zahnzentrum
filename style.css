@@ -5,7 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: "Inknut Antiqua", serif;
+    font-family: "Gupter", serif;
     font-weight: 300;
     font-style: normal;
     height: 100vh;
@@ -253,4 +253,27 @@ html, body, .header, header, nav, footer, .footer {
   margin:0;
   padding:0;
   
+}
+
+
+
+/* GOOGLE FONTS */
+
+
+.gupter-regular {
+  font-family: "Gupter", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gupter-medium {
+  font-family: "Gupter", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.gupter-bold {
+  font-family: "Gupter", serif;
+  font-weight: 700;
+  font-style: normal;
 }

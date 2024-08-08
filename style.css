@@ -78,7 +78,6 @@ body, html, .header, header, nav, footer {
 } 
 
 nav {
-    background-color: #f8f8f8;
     border-top: 1px solid #ddd;
     width: 100%;
 }
@@ -102,6 +101,7 @@ nav ul li a {
     font-weight: lighter;
     padding: 10px 0;
     display: block;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -153,14 +153,14 @@ footer a {
 
 .background-hero {
 
-  background-image: url("img/familie.jpg");
+  background-image: url("img/familyhappy.jpg");
   background-repeat:no-repeat;
   background-position: center;
   background-size: cover;
   width:100%;
   display: flex;
   position: relative;
-  justify-content: left; /* Center horizontally */
+  justify-content: right; /* Center horizontally */
   align-items: center;     /* Center vertically */
   height: 100vh;  
   flex: 50%;         
@@ -205,7 +205,7 @@ footer a {
 
 .herotext-container {
   justify-content:center;
-  text-align:center;
+  text-align:right;
   padding:1rem 5rem 1rem 5rem;
   position:center;
   width: 70%;
@@ -302,17 +302,18 @@ footer a {
 
 .background-hero {
   
-  background-image: url("img/familie.jpg");
+  background-image: url("img/familyhappy.jpg");
   background-repeat:no-repeat;
   background-position: center;
   background-size: cover;
   width:100%;
   display: flex;
   position: relative;
-  justify-content: left; /* Center horizontally */
+  justify-content: right; /* Center horizontally */
   align-items: center;     /* Center vertically */
   height: 100vh;  
-  flex: 50%;       
+  flex: 50%; 
+      
 }
 
   .flex-item-right, .flex-item-left {
@@ -345,8 +346,8 @@ html, body, .header, header, nav, footer, .footer {
 }
 
 img.desaturate, .infos-image {
-color: grayscale(100%); filter: grayscale(100%);
-filter: grayscale(100%); transition: filter 0.3s ease-in-out;
+filter: grayscale(100%); 
+transition: filter 0.3s ease-in-out;
 }
 
 img.desaturate:hover, .infos-image:hover { 

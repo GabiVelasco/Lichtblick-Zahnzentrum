@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
 
 
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,6 +13,12 @@ body {
     display:block;
     position:relative;
 }
+
+body, html, .header, header, nav, footer{ 
+  width:100%;
+  padding:0;
+  margin:0;
+}
 .header {
     background-color: white;
     padding: 10px 20px;
@@ -20,6 +26,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
+    width:100%;
+    height: fit-content;
 }
 .header .logo {
     display: flex;
@@ -31,6 +39,7 @@ body {
 }
 .header .contact-info {
     text-align: left;
+    margin-right:0;
 }
 
 .header .contact-info span {
@@ -67,6 +76,7 @@ body {
 nav {
     background-color: #f8f8f8;
     border-top: 1px solid #ddd;
+    width:100%;
 }
 nav ul {
     list-style: none;
@@ -74,6 +84,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    width:100%;
 }
 nav ul li {
     margin: 0 15px;
@@ -140,12 +151,13 @@ nav ul li a:hover {
     font-weight:100;
     color:white;
     width:100%;
-    height:80px;
-    margin-bottom:0;
+    height:fit-content;
     bottom:0;
-    padding:20px;
+    padding:0;
     display:block;
     position:absolute;
+    margin:0;
+
   }
 
   footer p {
@@ -153,7 +165,38 @@ nav ul li a:hover {
     letter-spacing:0.2cap;
   }
 
-  .termin-symbol {
-   
+ .footer-container {
+    padding:10px;
   }
+
+  .termin-symbol {
+    padding-top: 0;
+  }
+
+
+  @media screen and (max-width:800px) {
+
+    .header{
+      display: block;
+      width:100lvh;
+  }
+
+ .contact-block, .contact-flex {
+  grid-auto-columns: auto;
+  text-align:right;
+  margin:0;
+
+ } 
+
+ .contact-info {
+
+ }
+
+}
   
+
+  body, html, .header, header, nav, footer{ 
+    width:100%;
+    padding:0;
+    margin:0;
+  }

@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 
-html, body {
+html, body{
     margin: 0;
     padding: 0;
     font-family: "Gupter", serif;
@@ -23,6 +23,7 @@ body, html, .header, header, nav, footer {
     margin: 0;
 }
 
+main{width:100%;}
 .header {
     background-color: white;
     display: flex;
@@ -149,6 +150,8 @@ footer a {
 .hero-container {
   width:100%;
   display: block;
+  text-align:center;
+  justify-content: center;
   /* -ms-flex-wrap: wrap; */
   
 }
@@ -176,10 +179,9 @@ footer a {
   padding:1rem 5rem 1rem 5rem;
   position:relative;
   width:100%;
-  flex: 10%;
-  background-repeat:no-repeat;
-  background-position: center;
-  background-size: contain;
+ 
+  
+
   
  
  
@@ -195,13 +197,12 @@ footer a {
 }
 
 .welcome-container h1 {
-  color:black;
+  color:#8fdbe6;
   font-weight:100;
- 
   width:fit-content;
-  padding:50px;
+  padding:10px;
   border-radius: 10px;
-  font-size:3rem;
+  font-size:4rem;
 
 
 }
@@ -235,6 +236,18 @@ footer a {
   
 }
 
+.text-infos {
+  text-align: center;
+  letter-spacing:1px;
+  font-weight:100;
+
+}
+
+.text-infos h1 {
+ color:#5cc6d4;
+ font-size: 50px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -259,7 +272,7 @@ footer a {
 .testimonial-section {
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color:#B6E5EB;
   color: #333;
   
 }
@@ -341,7 +354,7 @@ input[type="radio"] {
 .controls label {
   width: 15px;
   height: 15px;
-  background-color: #ccc;
+  background-color: #5ab4c0;
   border-radius: 50%;
   display: inline-block;
   margin: 0 8px;
@@ -413,6 +426,8 @@ input[type="radio"]:checked + label {
 
   .hero-container, .welcome-container, .background-hero {
     display: block;
+    text-align: center;
+    justify-content: center;
   }
 
 .background-hero {
@@ -455,6 +470,8 @@ input[type="radio"]:checked + label {
     width:auto; max-width: 40%;
     min-width: 250px;
 }
+
+.hidden { display: none;}
 }
 
 

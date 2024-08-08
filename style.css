@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap');
+
 
 html, body {
     margin: 0;
@@ -103,47 +105,8 @@ nav ul li a:hover {
     color: #007BFF;
 }
 
-.inknut-antiqua-light {
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 300;
-    font-style: normal;
-}
 
-.inknut-antiqua-regular {
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.inknut-antiqua-medium {
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.inknut-antiqua-semibold {
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.inknut-antiqua-bold {
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.inknut-antiqua-extrabold {
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.inknut-antiqua-black {
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 900;
-    font-style: normal;
-}
 
 footer { 
     background-color: rgb(17, 21, 46);
@@ -186,11 +149,14 @@ footer p {
 }
 
 .welcome-container {
+  display:block;
   justify-content:center;
   text-align:center;
   padding:1rem 5rem 1rem 5rem;
   position:relative;
-  
+  bottom: -60px;
+ 
+ 
 
 
 }
@@ -198,11 +164,15 @@ footer p {
   font-size:20px;
   color:#2b5e94;
   font-weight:100;
+  
 }
 
 .welcome-container h1 {
   color:#2b5e94;
   font-weight:100;
+  background-color:white;
+  width:fit-content;
+  padding:20px;
 
 
 }
@@ -278,3 +248,9 @@ footer p {
 
 
 
+html, body, .header, header, nav, footer, .footer {
+  width: 100%;
+  margin:0;
+  padding:0;
+  
+}

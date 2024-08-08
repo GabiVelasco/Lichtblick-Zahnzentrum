@@ -114,34 +114,66 @@ nav ul li a:hover {
 
 
 
+       /* Your existing CSS goes here */
+       footer { 
+        font-weight: 100;
+        color: white;
+        width: 100%;
+        height: fit-content;
+        bottom: 0;
+        padding: 0;
+        display: block;
+        position: relative;
+        margin: 0;
+        border-top:#586880 1px solid;
 
-footer { 
-    background-color: rgb(17, 21, 46);
-    font-weight: 100;
-    color: white;
-    width: 100%;
-    height: fit-content;
-    bottom: 0;
-    padding: 0;
-    display: block;
-    position: relative;
-    margin: 0;
-}
+       }
 
-footer p {
-    font-weight: 100;
-    letter-spacing: 0.2cap;
-}
+    footer p {
+        font-weight: 100;
+        letter-spacing: 0.2cap;
+    }
 
-footer a {
-  color: white;
-}
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
 
+    .footer-container {
+        padding: 10px;
+        background-color: rgb(17, 21, 46);
+        text-align: center;
+        height:fit-content;
+    }
 
+    .socialmedia-container {
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        width:100%;
+        height: fit-content;
+        padding: 40px 0 40px 0;
 
-.footer-container {
-    padding: 10px;
-}
+    }
+
+    .socialmedia-container a {
+        margin: 0 10px;
+        color:#5ab4c0;
+        font-size: 24px;
+        transition: color 0.3s;
+    }
+
+    .socialmedia-container p {
+      margin: 0 10px;
+      color:#2b808b;
+      font-size: 24px;
+      transition: color 0.3s;
+      padding: 10px 0 10px 0;
+  }
+
+    .socialmedia-container a:hover {
+        color: #007BFF; /* Change to your desired hover color */
+    }
 
 .schedule-symbol {
     padding-top: 0;

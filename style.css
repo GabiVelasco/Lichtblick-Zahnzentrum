@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
 
-
 html, body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,17 +7,18 @@ html, body {
     font-family: "Inknut Antiqua", serif;
     font-weight: 300;
     font-style: normal;
-    height:100lvh;
-    width:100%;
-    display:block;
-    position:relative;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: relative;
 }
 
-body, html, .header, header, nav, footer{ 
-  width:100%;
-  padding:0;
-  margin:0;
+body, html, .header, header, nav, footer { 
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
+
 .header {
     background-color: white;
     padding: 10px 20px;
@@ -26,177 +26,194 @@ body, html, .header, header, nav, footer{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    width:100%;
+    width: 100%;
     height: fit-content;
 }
+
 .header .logo {
     display: flex;
     align-items: center;
 }
+
 .header .logo img {
     height: fit-content;
     margin-right: 10px;
 }
+
 .header .contact-info {
     text-align: left;
-    margin-right:0;
+    margin-right: 0;
 }
 
 .header .contact-info span {
     margin: 5px 0;
-    font-size:14px;
-    font-weight:800
+    font-size: 14px;
+    font-weight: 800;
 }
 
 .header .contact-info p {
     margin: 5px 0;
-    font-size:13px;
+    font-size: 13px;
 }
 
 .header .contact-info a {
     margin: 5px 0;
-    font-size:13px;
+    font-size: 13px;
     text-decoration: none;
     color: rgb(13, 37, 177);
-    
 }
-
 
 .contact-flex {
     display: flex;
 }
 
-.contact-block{
-    display:block;
-    padding:10px;
-    text-align:left;
+.contact-block {
+    display: block;
+    padding: 10px;
+    text-align: left;
 } 
-
 
 nav {
     background-color: #f8f8f8;
     border-top: 1px solid #ddd;
-    width:100%;
+    width: 100%;
 }
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    width:100%;
+    width: 100%;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: lighter;
     padding: 10px 0;
     display: block;
-    font-size:smaller;
-    
+    font-size: smaller;
 }
+
 nav ul li a:hover {
     color: #007BFF;
 }
-
 
 .inknut-antiqua-light {
     font-family: "Inknut Antiqua", serif;
     font-weight: 300;
     font-style: normal;
-  }
-  
-  .inknut-antiqua-regular {
+}
+
+.inknut-antiqua-regular {
     font-family: "Inknut Antiqua", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .inknut-antiqua-medium {
+}
+
+.inknut-antiqua-medium {
     font-family: "Inknut Antiqua", serif;
     font-weight: 500;
     font-style: normal;
-  }
-  
-  .inknut-antiqua-semibold {
+}
+
+.inknut-antiqua-semibold {
     font-family: "Inknut Antiqua", serif;
     font-weight: 600;
     font-style: normal;
-  }
-  
-  .inknut-antiqua-bold {
+}
+
+.inknut-antiqua-bold {
     font-family: "Inknut Antiqua", serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .inknut-antiqua-extrabold {
+}
+
+.inknut-antiqua-extrabold {
     font-family: "Inknut Antiqua", serif;
     font-weight: 800;
     font-style: normal;
-  }
-  
-  .inknut-antiqua-black {
+}
+
+.inknut-antiqua-black {
     font-family: "Inknut Antiqua", serif;
     font-weight: 900;
     font-style: normal;
-  }
-
-
-  footer { 
-    background-color:rgb(17, 21, 46);
-    font-weight:100;
-    color:white;
-    width:100%;
-    height:fit-content;
-    bottom:0;
-    padding:0;
-    display:block;
-    position:absolute;
-    margin:0;
-
-  }
-
-  footer p {
-    font-weight:100;
-    letter-spacing:0.2cap;
-  }
-
- .footer-container {
-    padding:10px;
-  }
-
-  .termin-symbol {
-    padding-top: 0;
-  }
-
-
-  @media screen and (max-width:800px) {
-
-    .header{
-      display: block;
-      width:100lvh;
-  }
-
- .contact-block, .contact-flex {
-  grid-auto-columns: auto;
-  text-align:right;
-  margin:0;
-
- } 
-
- .contact-info {
-
- }
-
 }
-  
 
-  body, html, .header, header, nav, footer{ 
-    width:100%;
-    padding:0;
-    margin:0;
+footer { 
+    background-color: rgb(17, 21, 46);
+    font-weight: 100;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    margin: 0;
+}
+
+footer p {
+    font-weight: 100;
+    letter-spacing: 0.2cap;
+}
+
+.footer-container {
+    padding: 10px;
+}
+
+.termin-symbol {
+    padding-top: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-block, .contact-flex {
+        text-align: right;
+        margin: 0;
+    } 
+
+    .contact-flex {
+        text-align: right;
+        margin: 0;
+        display:flex;
+        justify-content:right;
+        
+    }
+
+
+    .header .contact-info span {
+      margin: 5px 0;
+      font-size: 14px;
+      font-weight: 800;
   }
+  
+  .header .contact-info p {
+      margin: 5px 0;
+      font-size: 13px;
+  }
+  
+  .header .contact-info a {
+      margin: 5px 0;
+      font-size: 13px;
+      text-decoration: none;
+      color: rgb(13, 37, 177);
+  }
+}
+
+body, html, .header, header, nav, footer { 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}

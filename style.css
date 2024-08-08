@@ -190,12 +190,14 @@ footer p {
   text-align:center;
   padding:1rem 5rem 1rem 5rem;
   position:relative;
+  
+
 
 }
 .welcome-container p {
   font-size:20px;
   color:#2b5e94;
-    font-weight:100;
+  font-weight:100;
 }
 
 .welcome-container h1 {
@@ -210,8 +212,11 @@ footer p {
   text-align:center;
   padding:1rem 5rem 1rem 5rem;
   position:center;
-  width: 50%;
+  width: 70%;
   align-items: center;
+  background-color:#2b5e943b;
+  border-radius: 0 0 0 0;
+
 
 
 }

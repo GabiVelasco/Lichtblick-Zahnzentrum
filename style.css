@@ -82,7 +82,7 @@ main{width:100%;}
 } 
 
 nav {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #1f58ad;
     width: 100%;
 }
 
@@ -546,6 +546,8 @@ ul.menu {
   padding: 0;
   display: flex;
   justify-content: center;
+  background-color: #B6E5EB
+
 }
 
 ul.menu li {
@@ -559,11 +561,16 @@ ul.menu li a {
   padding: 10px 0;
   display: block;
   font-size: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 ul.menu li a:hover {
-  color: #007BFF;
+  color: black;
+  transform: scale(1.12);
+  
 }
+
+
 
 /* Burger Menu */
 .menu-icon {

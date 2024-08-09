@@ -246,7 +246,7 @@ nav ul li a:hover {
   align-items:right;
   padding:1rem 5rem 1rem 5rem;
   position:right;
-  width: 60%;
+  width: 70%;
   background-color:#2b5e943b;
   border-radius: 0 0 0 0;
 
@@ -254,12 +254,13 @@ nav ul li a:hover {
 
 }
 .herotext-container p {
-  font-size:30px;
-  text-align:left;
-  color:white;
-  padding-left:10%;
+  font-size: calc(16px + 1.4vw); /* Responsive font size */
+  text-align: left;
+  color: white;
+  padding-left: 30%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Schatteneffekt */
 }
+
 
 
 .body-infos-container {

@@ -608,11 +608,11 @@ bottom:0;
   }
 
   .header .logo img {
-    height: fit-content;
+    height: auto;
     margin-right: 10px;
-    width:auto; 
-    max-width: 40%;
-    min-width: 200px;
+    max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner pai */
+    min-width: 200px; /* Define uma largura mínima para a imagem */
+    width: 50%; /* A imagem ocupará 100% da largura disponível dentro do contêiner */
 }
 
 .hidden { display: none;}

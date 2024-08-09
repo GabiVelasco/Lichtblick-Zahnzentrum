@@ -572,8 +572,9 @@ input[type="radio"]:checked + label {
   .header .logo img {
     height: fit-content;
     margin-right: 10px;
-    width:auto; max-width: 40%;
-    min-width: 250px;
+    width:auto; 
+    max-width: 40%;
+    min-width: 200px;
 }
 
 .hidden { display: none;}

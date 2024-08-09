@@ -66,6 +66,25 @@ main{width:100%;}
   width: 50%; /* A imagem ocupará 100% da largura disponível dentro do contêiner */
 }
 
+/* 
+.header .logo {
+  display: flex;
+  align-items: center;
+  max-width: 100%; 
+  min-width: 200px; 
+  width: 30%; 
+
+} */
+
+/* .header .logo img {
+  padding:10px;
+  height: auto;
+  margin-right: 10px;
+  max-width: 100%;
+  min-width: 200px; 
+  width: 30%; 
+  margin-right:0; } */
+
 .header .contact-info {
     text-align: left;
     margin-right: 0;

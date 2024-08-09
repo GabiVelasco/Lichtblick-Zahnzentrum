@@ -552,14 +552,23 @@ input[type="radio"]:checked + label {
 }
 
 .herotext-container {
-  justify-content:right;
-  text-align:right;
+  justify-content:left;
+  text-align:end;
   font-size-adjust: inherit;
-  position:right;
+  position:relative;
   width: 100%;
-  align-items:right;
+  align-items:end;
   background-color:#2b5e943b;
   border-radius: 0 0 0 0;
+
+
+
+}
+
+
+.herotext-container p{
+padding: 5px;
+
 
 
 

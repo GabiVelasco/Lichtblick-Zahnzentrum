@@ -58,7 +58,7 @@ main{width:100%;}
  font-size: calc(12px * 1.5);
 }
 
-.logotext { display:block;}
+.logotext { display:block; margin-left:0;}
 
 .header .logo img {
   padding:10px;
@@ -67,6 +67,7 @@ main{width:100%;}
   max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner pai */
   min-width: 200px; /* Define uma largura mínima para a imagem */
   width: 30%; /* A imagem ocupará 100% da largura disponível dentro do contêiner */
+  margin-right:0;
 }
 
 .header .contact-info {

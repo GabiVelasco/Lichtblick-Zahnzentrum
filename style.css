@@ -612,7 +612,7 @@ html, body, .header, header, nav, footer, .footer {
 }
 
 img.desaturate, .infos-image {
-filter: grayscale(100%); 
+filter: grayscale(75%); 
 transition: filter 0.3s ease-in-out;
 width: 50%;
 min-width: 15em;

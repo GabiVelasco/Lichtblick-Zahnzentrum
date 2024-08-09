@@ -653,7 +653,7 @@ bottom:0;
     height: auto;
     max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner pai */
     min-width: 300px; /* Define uma largura mínima para a imagem */
-    width: 50%; /* A imagem ocupará 100% da largura disponível dentro do contêiner */
+    width: 60%; /* A imagem ocupará 100% da largura disponível dentro do contêiner */
 }
 
 .hidden { display: none;}

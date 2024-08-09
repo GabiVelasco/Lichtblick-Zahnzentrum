@@ -205,36 +205,37 @@ nav ul li a:hover {
 }
 
 .welcome-container {
-  justify-content:center;
-  display: flex;
-  text-align:center;
-  padding:1rem 5rem 1rem 5rem;
+  display: block;
+ 
   position:relative;
   width:100%;
- 
+  justify-content:center;
+  text-align:center;
+  align-items:center;
   
-
-  
- 
- 
-
 
 }
 .welcome-container p {
   font-size:20px;
   color:#2b5e94;
   font-weight:100;
-  
-  
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  width: 100%;
+
 }
 
 .welcome-container h1 {
   color:#8fdbe6;
   font-weight:100;
-  width:fit-content;
   padding:10px;
   border-radius: 10px;
-  font-size:4rem;
+  text-align:center;
+  align-items:center;
+  width: 100%;
+  font-size: calc(20px * 1.5);
+  
 
 
 }
@@ -242,10 +243,10 @@ nav ul li a:hover {
 .herotext-container {
   justify-content:right;
   text-align:right;
+  align-items:right;
   padding:1rem 5rem 1rem 5rem;
   position:right;
   width: 60%;
-  align-items:right;
   background-color:#2b5e943b;
   border-radius: 0 0 0 0;
 
@@ -264,14 +265,22 @@ nav ul li a:hover {
 .body-infos-container {
 
   display: flex;
-  padding:90px 40px;
+  padding:90px 0;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+ 
   
 }
 
 .text-infos {
-  text-align: center;
+  
   letter-spacing:1px;
   font-weight:100;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  padding:20px;  
 
 }
 
@@ -288,12 +297,12 @@ nav ul li a:hover {
 }
 
 .flex-item-left {
-  padding: 10px;
+  
   flex: 50%;
 }
 
 .flex-item-right {
-  padding: 10px;
+  
   flex: 50%;
 }
   
@@ -549,6 +558,9 @@ html, body, .header, header, nav, footer, .footer {
 img.desaturate, .infos-image {
 filter: grayscale(100%); 
 transition: filter 0.3s ease-in-out;
+width: 50%;
+min-width: 15em;
+max-width: 60em;
 }
 
 img.desaturate:hover, .infos-image:hover { 

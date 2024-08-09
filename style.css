@@ -282,13 +282,29 @@ nav ul li a:hover {
   text-align:center;
   align-items:center;
   padding:20px;  
+  color: rgb(5, 23, 37);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Schatteneffekt */
 
 }
+
+.text-infos p {
+  color:#071531;
+  font-size: calc(14px + 1.0vw); /* Responsive font size */
+  filter: grayscale(50%); 
+  transition: filter 0.3s ease-in-out;
+ }
 
 .text-infos h1 {
  color:#5cc6d4;
- font-size: 50px;
+ font-size: calc(22px + 1.4vw); /* Responsive font size */
+ filter: grayscale(50%); 
+ transition: filter 0.3s ease-in-out;
 }
+
+.text-infos h1:hover { 
+   animation: toColor 0.3s;
+   filter: none;
+  }
 
 .flex-container {
   display: flex;

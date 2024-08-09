@@ -617,7 +617,13 @@ transition: filter 0.3s ease-in-out;
 width: 50%;
 min-width: 15em;
 max-width: 60em;
+
+
 }
+
+.infos-image img {
+  border-radius: 3px;
+  }
 
 img.desaturate:hover, .infos-image:hover { 
  animation: toColor 0.3s;

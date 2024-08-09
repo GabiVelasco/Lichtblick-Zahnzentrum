@@ -541,12 +541,11 @@ input[type="radio"]:checked + label {
   background-position: left;
   background-size: cover;
   width:100%;
-  display: flex;
+  display: block;
   position: relative;
   justify-content: right; /* Center horizontally */
   align-items: center;     /* Center vertically */
   height: 100vh;  
-  flex: 50%; 
   overflow:hidden;
       
 }
@@ -555,11 +554,12 @@ input[type="radio"]:checked + label {
   justify-content:left;
   text-align:end;
   font-size-adjust: inherit;
-  position:relative;
+  position:absolute;
   width: 100%;
   align-items:end;
   background-color:#2b5e943b;
   border-radius: 0 0 0 0;
+  bottom:0;
 
 
 
@@ -568,6 +568,9 @@ input[type="radio"]:checked + label {
 
 .herotext-container p{
 padding: 5px;
+justify-content:left;
+text-align: start;
+bottom:0;
 
 
 

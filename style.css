@@ -1028,6 +1028,7 @@ a {
 }
 
 .has-submenu > a {
+  z-index:1;
  
 }
 
@@ -1044,6 +1045,9 @@ a {
   align-items: center;
   justify-content:center;
   text-align:center;
+  z-index:1;
+ 
+
 }
 
 .submenu li {

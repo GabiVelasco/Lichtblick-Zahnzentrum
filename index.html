@@ -49,12 +49,17 @@
 <input type="checkbox" id="menu-toggle">
 <label for="menu-toggle" class="menu-icon">&#9776;</label>
 <ul class="menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#your-dentist">Your Dentist</a></li>
-    <li><a href="#job-posting">Job Posting</a></li>
-    <li><a href="#clinic">The Practice</a></li>
-    <li><a href="#directions">Directions</a></li>
-    <li><a href="#book-appointment">Book Appointment</a></li>
+    <li><a href="#home">Startseite</a></li>
+    <li class="has-submenu">
+        <a href="#your-dentist">Ihr Zahnarzt</a>
+        <ul class="submenu">
+            <li><a href="#pediatric-dentist">Kinderzahnarzt</a></li>
+        </ul>
+    </li>
+    <li><a href="#job-posting">Stellenangebote</a></li>
+    <li><a href="#clinic">Die Praxis</a></li>
+    <li><a href="#directions">Anfahrt</a></li>
+    <li><a href="#book-appointment">Termin Buchen</a></li>
 </ul>
 
 </nav>
@@ -166,8 +171,97 @@
     </section>
    
     <section id="your-dentist" class="content-section">
-        <h1>Ihr Zahnarzt</h1>
-        <p>Hier finden Sie Informationen zu unserem Zahnarzt-Team.</p>
+
+        <div class="your-dentist-container">
+
+            <h1>Ihr Zahnarzt</h1>
+            <p>Hier finden Sie Informationen zu unserem Zahnarzt-Team.</p>
+        
+            <div class="body-infos-container flex-container reverse">
+                <section class="infos-image flex-item-left">
+                    <img src="img/arztin3_30.jpg" alt="" width="80%;">
+                </section>
+                <section class="text-infos flex-item-right">
+                    <h1>Dr. Anna Müller</h1>
+                    <p>Dr. Anna Müller ist spezialisiert auf Zahnchirurgie und Parodontologie. 
+                       Mit über 15 Jahren Erfahrung bietet sie unseren Patienten eine erstklassige Versorgung 
+                       in einem modernen und freundlichen Umfeld. Sie ist bekannt für ihre einfühlsame Betreuung 
+                       und ihr Engagement für die Zahngesundheit ihrer Patienten.</p>
+                </section>
+            </div>
+        
+            <div class="body-infos-container flex-container">
+                <section class="text-infos flex-item-left">
+                    <h1>Dr. Michael Schmidt</h1>
+                    <p>Dr. Michael Schmidt ist ein erfahrener Zahnarzt mit einem Fokus auf ästhetische Zahnmedizin 
+                       und Endodontie. Er kombiniert moderne Techniken mit einem ästhetischen Gespür, um die besten 
+                       Ergebnisse für seine Patienten zu erzielen. Seine freundliche Art und sein Fachwissen machen 
+                       ihn zu einem wertvollen Mitglied unseres Teams.</p>
+                </section>
+        
+                <section class="infos-image flex-item-right">
+                    <img src="img/arztin2_50.jpg" alt="" width="80%;">
+                </section>
+            </div>
+        
+            <div class="body-infos-container flex-container reverse">
+                <section class="infos-image flex-item-left">
+                    <img src="img/arztin3_30.jpg" alt="" width="80%;">
+                </section>
+                <section class="text-infos flex-item-right">
+                    <h1>Dr. Sarah Lehmann</h1>
+                    <p>Dr. Sarah Lehmann ist Expertin für Kinderzahnheilkunde und Prophylaxe. 
+                       Ihre liebevolle und geduldige Art schafft eine angenehme Atmosphäre für unsere kleinen Patienten. 
+                       Mit ihrer speziellen Ausbildung sorgt sie dafür, dass Kinder frühzeitig positive Erfahrungen 
+                       beim Zahnarzt machen.</p>
+                </section>
+            </div>
+        
+            <div class="body-infos-container flex-container">
+                <section class="text-infos flex-item-left">
+                    <h1>Dr. Thomas Becker</h1>
+                    <p>Dr. Thomas Becker ist auf Implantologie und komplexe Zahnsanierungen spezialisiert. 
+                       Seine präzise Arbeit und sein umfassendes Wissen in der Zahnmedizin garantieren eine 
+                       qualitativ hochwertige Behandlung. Er legt großen Wert auf eine umfassende Beratung und 
+                       die Zufriedenheit seiner Patienten.</p>
+                </section>
+        
+                <section class="infos-image flex-item-right">
+                    <img src="img/arztin2_50.jpg" alt="" width="80%;">
+                </section>
+            </div>
+        
+        </div>
+        
+    </section>
+
+    <section id="pediatric-dentist" class="content-section">
+        <div class="body-infos-container flex-container reverse">
+            <section class="infos-image flex-item-left">
+                <img src="img/arztin3_30.jpg" alt="" width="80%;">
+            </section>
+            <section class="text-infos flex-item-right">
+                <h1>Dr. Anna Müller</h1>
+                <p>Dr. Anna Müller ist spezialisiert auf Zahnchirurgie und Parodontologie. 
+                   Mit über 15 Jahren Erfahrung bietet sie unseren Patienten eine erstklassige Versorgung 
+                   in einem modernen und freundlichen Umfeld. Sie ist bekannt für ihre einfühlsame Betreuung 
+                   und ihr Engagement für die Zahngesundheit ihrer Patienten.</p>
+            </section>
+        </div>
+    
+        <div class="body-infos-container flex-container">
+            <section class="text-infos flex-item-left">
+                <h1>Dr. Michael Schmidt</h1>
+                <p>Dr. Michael Schmidt ist ein erfahrener Zahnarzt mit einem Fokus auf ästhetische Zahnmedizin 
+                   und Endodontie. Er kombiniert moderne Techniken mit einem ästhetischen Gespür, um die besten 
+                   Ergebnisse für seine Patienten zu erzielen. Seine freundliche Art und sein Fachwissen machen 
+                   ihn zu einem wertvollen Mitglied unseres Teams.</p>
+            </section>
+    
+            <section class="infos-image flex-item-right">
+                <img src="img/arztin2_50.jpg" alt="" width="80%;">
+            </section>
+        </div>
     </section>
     
     <section id="job-posting" class="content-section">

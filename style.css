@@ -170,6 +170,17 @@ nav ul li a:hover {
 }
 
 
+.content-section { display:none;}
+
+:target {
+  display: block;
+}
+
+:target:not(#startsite){ 
+  display:block;
+}
+
+
 
        /* Your existing CSS goes here */
        footer { 
@@ -822,3 +833,16 @@ ul.menu li a:hover {
 
 
 }
+
+.content-section:target {
+  display: block;
+}
+
+
+
+body:not(:has(:target)) #startsite {
+  display: block;
+}
+
+
+

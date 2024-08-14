@@ -700,6 +700,9 @@ bottom:0;
   text-align:center;
   align-items:center;
   display:block;
+  
+  max-width: 100px;
+  margin: 0 auto;
 }
 
 
@@ -855,6 +858,35 @@ ul.menu li a:hover {
       top: 20px;
   }
 
+  /* Media query for screens smaller than 960px */
+  @media (max-width: 960px) {
+      .body-infos-container {
+          flex-direction: column;
+          align-items: center; /* Centers content horizontally */
+          text-align: center; /* Centers text content */
+          width:100%;
+      }
+  
+      .flex-container {
+          flex-direction: column;
+      }
+  
+      .flex-item-left,
+      .flex-item-right {
+          width: 100%;
+          margin-bottom: 20px; /* Adds spacing between sections */
+      }
+  
+      .reverse {
+          flex-direction: column; /* Stacks content vertically */
+      }
+      
+      .text-infos ul {
+          margin-left: 0; /* Removes left margin on smaller screens */
+          margin-top: 10px;
+      }
+  }
+
 
 }
 
@@ -992,3 +1024,70 @@ a {
 
 /* applying wrap */
 
+.body-infos-container {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-item-left,
+.flex-item-right {
+  flex: 1;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* .infos-image img {
+  border-radius: 8px;
+}
+
+.text-infos h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-infos h2 {
+  font-size: 20px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text-infos p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text-infos ul {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.text-infos ul li {
+  margin-bottom: 8px;
+} */
+
+
+/* applying wrap end  */
+
+@media screen and (max-width: 960px) {
+
+  .body-infos-container, .flex-container, 
+  .flex-item-left,
+  .flex-item-right, .row-reverse{
+   display: block;
+  }
+
+
+
+}

@@ -840,7 +840,7 @@ ul.menu li a:hover {
 
 
 
-body:not(:has(:target)) #startsite {
+body:not(:has(:target)) #home {
   display: block;
 }
 

@@ -360,6 +360,43 @@ nav ul li a:hover {
 
 }
 
+
+.titles-container {
+  display: block;
+ 
+  position:relative;
+  width:100%;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  
+
+}
+.titles-container p {
+  font-size:20px;
+  color:#2b5e94;
+  font-weight:100;
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  width: 100%;
+
+}
+
+.titles-container h1 {
+  color:#8fdbe6;
+  font-weight:100;
+  padding:10px;
+  border-radius: 10px;
+  text-align:center;
+  align-items:center;
+  width: 100%;
+  font-size: calc(20px * 1.5);
+  
+
+
+}
+
 .herotext-container {
   justify-content:right;
   text-align:right;
@@ -1091,3 +1128,94 @@ a {
 
 
 }
+
+
+
+/* creating Contact Sesscion */
+
+/* General styles */
+/* General styles */
+.contact-links {
+  position: relative;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+  
+
+  
+}
+
+.email-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+ 
+  
+}
+
+.infos-image a, .contact-links a, .e-mail-link a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+  
+  position: relative;
+}
+
+
+.infos-image img, .contact-links img, .e-mail-link img  {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+ 
+  position: relative;
+
+}
+
+
+  .arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #007bff transparent transparent;
+    transform: translateY(-50%) rotate(180deg); /* Rotate the arrow */;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    position: relative;
+    margin-top:25px;
+   
+}
+
+@media (max-width: 960px) {
+  .contact-links {
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  .email-link {
+      margin-right: 0; /* Remove space for the arrow */
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+  }
+  
+  .arrow {
+      position: static;
+      margin-top: 5px;
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent #007bff transparent;
+      transform: none;
+  }
+}
+
+/* creating Contact Session END */

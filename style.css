@@ -45,10 +45,31 @@ main{width:100%; align-items:center; justify-content:center;}
 
 .header .logo {
     display: flex;
+    align-items: left;
+    width:100%;
+    max-width: 300px;
+    padding:20px;
+    justify-content: center;
     align-items: center;
+    
 
 
 }
+
+.header .logo img {
+
+  padding:10px;
+  height: auto;
+  max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner pai */
+  min-width: 100px; /* Define uma largura mínima para a imagem */
+  width:100%;
+  max-width: 300px;
+ 
+}
+
+
+
+
 
 .header .logo p {
   display: flex;
@@ -65,34 +86,10 @@ main{width:100%; align-items:center; justify-content:center;}
  font-size: calc(12px * 1.5);
 }
 
-.logotext { display:block; margin-left:0;}
+.logotext { display:block; margin-left:0; justify-content: space-between;
+  align-items: left;}
 
-.header .logo img {
-  padding:10px;
-  height: auto;
-  max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner pai */
-  min-width: 200px; /* Define uma largura mínima para a imagem */
-  width: 50%; /* A imagem ocupará 100% da largura disponível dentro do contêiner */
-}
 
-/* 
-.header .logo {
-  display: flex;
-  align-items: center;
-  max-width: 100%; 
-  min-width: 200px; 
-  width: 30%; 
-
-} */
-
-/* .header .logo img {
-  padding:10px;
-  height: auto;
-  margin-right: 10px;
-  max-width: 100%;
-  min-width: 200px; 
-  width: 30%; 
-  margin-right:0; } */
 
 .header .contact-info {
     text-align: left;
@@ -223,6 +220,8 @@ nav ul li a:hover {
         width:100%;
         height: fit-content;
         padding: 40px 0 40px 0;
+        background-color:#F6F1EF;
+
 
     }
 
@@ -243,7 +242,7 @@ nav ul li a:hover {
   }
 
     .socialmedia-container a:hover {
-        color: #007BFF; /* Change to your desired hover color */
+        color: #335172; /* Change to your desired hover color */
         transform: scale(1.12);
     }
 
@@ -253,6 +252,8 @@ nav ul li a:hover {
       width:100%;
       height: fit-content;
       padding: 40px 0 40px 0;
+      background-color:#F6F1EF;
+
    
   
 
@@ -660,13 +661,29 @@ bottom:0;
     flex: 100%;
   }
 
-  .header .logo img {
-    height: auto;
-    max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner pai */
-    min-width: 300px; /* Define uma largura mínima para a imagem */
-    width: 50%; /* A imagem ocupará 100% da largura disponível dentro do contêiner */
+  .header .logo {
+    display: flex;
+    align-items: left;
+    width:100%;
+    max-width: 300px;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    
+
+
 }
 
+.header .logo img {
+
+  padding:10px;
+  height: auto;
+  max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner pai */
+  min-width: 100px; /* Define uma largura mínima para a imagem */
+  width:100%;
+  max-width: 300px;
+ 
+}
 .hidden { display: none;}
 
 .tooth {

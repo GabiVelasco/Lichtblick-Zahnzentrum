@@ -48,6 +48,7 @@ main{width:100%; align-items:center; justify-content:center;}
     border-bottom: 1px solid #ddd;
     width: 100%;
     height: fit-content;
+    background-color:#d2e0d721;
 }
 
 .header .logo {
@@ -145,6 +146,7 @@ transform:scale(1.12);
 nav {
     border-top: 1px solid #1f58ad;
     width: 100%;
+    z-index: 2;
 }
 
 nav ul {
@@ -199,6 +201,7 @@ nav ul li a:hover {
         margin: 0;
         border-top:#586880 1px solid;
         font-size: 16px;
+        background-color:#d2e0d721;
 
        }
 
@@ -227,7 +230,7 @@ nav ul li a:hover {
         width:100%;
         height: fit-content;
         padding: 40px 0 40px 0;
-        background-color:#F6F1EF;
+        background-color:#c1d8ca00;
 
 
     }
@@ -259,7 +262,7 @@ nav ul li a:hover {
       width:100%;
       height: fit-content;
       padding: 40px 0 40px 0;
-      background-color:#F6F1EF;
+      background-color:#d2e0d700;
 
    
   
@@ -321,20 +324,73 @@ nav ul li a:hover {
   justify-content: right; /* Center horizontally */
   align-items: center;     /* Center vertically */
   height: 100vh;  
-  flex: 50%;         
+  flex: 50%;   
+  z-index: 2;
+      
 }
 
+/*  Welcome Container effect */
 .welcome-container {
   display: block;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  background: #ffffff; /* White background */
+  color: #2b808b; /* Dark teal text color */
+  border-radius: 10px;
+  overflow: hidden; /* Ensure stars stay within container */
  
-  position:relative;
-  width:100%;
-  justify-content:center;
-  text-align:center;
-  align-items:center;
-  
-
 }
+
+.welcome-container h1 {
+  margin: 0;
+  font-size: 2em;
+  position: relative;
+  color: #2b808b; /* Dark teal text color */
+}
+
+.welcome-container p {
+  font-size: 1.2em;
+  color: #2b808b; /* Dark teal text color */
+}
+
+@keyframes star-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-100px) scale(1);
+  }
+}
+
+.star {
+  position: absolute;
+  background: radial-gradient(circle, #efeff0 0%, #071a81 100%);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  animation: star-animation 2s infinite ease-in-out;
+  z-index: 0;
+}
+
+.star:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+.star:nth-child(2) { top: 30%; left: 60%; animation-delay: 1s; }
+.star:nth-child(3) { top: 50%; left: 10%; animation-delay: 0.5s; }
+.star:nth-child(4) { top: 70%; left: 80%; animation-delay: 1.5s; }
+.star:nth-child(5) { top: 90%; left: 40%; animation-delay: 0.8s; }
+.star:nth-child(6) { top: 20%; left: 80%; animation-delay: 1.2s; }
+.star:nth-child(7) { top: 60%; left: 20%; animation-delay: 0.3s; }
+.star:nth-child(8) { top: 80%; left: 70%; animation-delay: 1.7s; }
+
+
+ /* welcome-container effect END */
+
 .welcome-container p {
   font-size:20px;
   color:#2b5e94;
@@ -346,7 +402,7 @@ nav ul li a:hover {
 
 }
 
-.welcome-container h1 {
+/* .welcome-container h1 {
   color:#8fdbe6;
   font-weight:100;
   padding:10px;
@@ -358,7 +414,7 @@ nav ul li a:hover {
   
 
 
-}
+} */
 
 
 .titles-container {
@@ -659,7 +715,7 @@ input[type="radio"]:checked + label {
   }
 
 .background-hero {
-  
+  z-index:3;
   background-image: url("img/familyhappy.jpg");
   background-repeat:no-repeat;
   background-position: left;
@@ -886,6 +942,7 @@ ul.menu li a:hover {
 
   #menu-toggle:checked + label + ul.menu {
       display: flex;
+      
   }
 
   .menu-icon {

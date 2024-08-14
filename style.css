@@ -32,7 +32,7 @@ body, html, .header, header, nav, footer {
     margin: 0;
 }
 
-main{width:100%;}
+main{width:100%; align-items:center; justify-content:center;}
 .header {
     background-color: white;
     display: flex;
@@ -846,3 +846,48 @@ body:not(:has(:target)) #home {
 
 
 
+section .directions {
+  justify-content:center;
+  text-align:center;
+  align-items:center;
+  display: block;
+  width:50%;
+  
+
+  
+}
+
+.directions iframe{
+  width: 100%;
+  max-width: 600px; /* Max width for the iframe */
+  height: 450px; /* Fixed height for the iframe */
+  border: 0;
+  display: block;
+  margin: 0 auto; /* Centers the iframe horizontally */
+
+  
+
+  
+}
+
+.directions h1{
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  width:100%;
+ 
+  
+
+  
+}
+
+.directions p{
+  align-items: center;
+  justify-content:center;
+  display: flex;
+  width:100%;
+ 
+  
+
+  
+}

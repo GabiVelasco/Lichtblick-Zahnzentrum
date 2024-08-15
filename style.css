@@ -3,7 +3,10 @@
 
 * {
   box-sizing: border-box; }
+html {
+  scroll-padding-top: 1000px; /* Same as the header height */
 
+}
 
 html, body{
   scroll-behavior: smooth;
@@ -33,15 +36,62 @@ body, html, .header, header, nav, footer {
     margin: 0;
 }
 
-a[name] {
-  display: block;
-  height: 800px; /* Adjust this value based on your header height */
-  margin-top: -800px; /* Negative margin equal to height to counteract the padding */
-  visibility: hidden; /* Hide the anchor element */ }
+/*  to scroll to top */
+/* General styles */
+body {
+  margin: 0;
+}
 
-main{width:100%; align-items:center; justify-content:center;}
+/* Header styles */
+header {
+  width: 100%;
+  height: 200px; /* Adjust this to the height of your header */
+  background-color: #2b808b;
+  /* Additional styles for your header */
+}
+
+/* Ensure the anchor link is positioned correctly */
+a[name] {
+  scroll-padding-top: 200px; /* Same as the header height */
+}
+
+/* Additional styles to visualize the effect */
+.container {
+  height: 800px; /* Just for demo purposes */
+  background: #f0f0f0;
+}
+
+
+#navSection {
+  scroll-margin-top: 200px; /* Adjust according to the header's height */
+}
+
+@media (min-width: 960px) {
+  html {
+    scroll-padding-top: 0; /* or any other adjustments you have */
+  }
+
+  #navSection {
+    scroll-margin-top: 0;
+  }
+}
+
+/*  to scroll to top END */
+
+a[name] { 
+  display: block;
+  height: 800px; 
+  margin-top: -800px; 
+  visibility: hidden;} 
+
+main{
+  width:100%; 
+  align-items:center; 
+  justify-content:center;
+}
+
+
 .header {
-    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +103,6 @@ main{width:100%; align-items:center; justify-content:center;}
 
 .header .logo {
     display: flex;
-    align-items: left;
     width:100%;
     max-width: 300px;
     padding:20px;
@@ -147,6 +196,8 @@ nav {
     border-top: 1px solid #1f58ad;
     width: 100%;
     z-index: 2;
+    margin-top: -200px; /* Adjust this value to match your header's height */
+  padding-top: 200px; /* Add this to maintain the original layout */
 }
 
 nav ul {
@@ -225,7 +276,6 @@ nav ul li a:hover {
     }
 
     .socialmedia-container {
-        background-color: white;
         text-align: center;
         width:100%;
         height: fit-content;
@@ -390,31 +440,6 @@ nav ul li a:hover {
 
 
  /* welcome-container effect END */
-
-.welcome-container p {
-  font-size:20px;
-  color:#2b5e94;
-  font-weight:100;
-  justify-content:center;
-  text-align:center;
-  align-items:center;
-  width: 100%;
-
-}
-
-/* .welcome-container h1 {
-  color:#8fdbe6;
-  font-weight:100;
-  padding:10px;
-  border-radius: 10px;
-  text-align:center;
-  align-items:center;
-  width: 100%;
-  font-size: calc(20px * 1.5);
-  
-
-
-} */
 
 
 .titles-container {
@@ -655,6 +680,27 @@ input[type="radio"]:checked + label {
   .slide h3 {
       font-size: 1rem;
   }
+
+  /* a[name] {
+    scroll-margin-top: 200px;} */
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f4f4f4;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 200px;
+      align-items: center;
+      justify-content:center;
+      text-align:center;
+      z-index:1;
+     
+    
+    }
 }
 /* sLIDES ENDE */
 
@@ -663,6 +709,7 @@ input[type="radio"]:checked + label {
     .header {
         display: block;
         width: 100%;
+        height:300px;
     }
 
     .contact-block, .contact-flex {
@@ -796,6 +843,10 @@ bottom:0;
   
   max-width: 100px;
   margin: 0 auto;
+
+  html {
+    scroll-padding-top: 0;
+  }
 }
 
 
@@ -1098,7 +1149,7 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 200px;
+  width: 400px;
   align-items: center;
   justify-content:center;
   text-align:center;
@@ -1280,3 +1331,54 @@ a {
 }
 
 /* creating Contact Session END */
+
+@media screen and (max-width:600px) {
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 300px;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    z-index:1;
+   
+  
+  }
+}
+
+
+a[name] {
+  display: block;
+  height: 800px; 
+  margin-top: -800px; 
+  visibility: hidden;} 
+
+
+  @media screen and (max-width:960px) {
+    a[name] {
+      display: block;
+      /* height: 800px; 
+      margin-top: -800px; 
+      visibility: hidden;}  */
+
+   
+  } 
+
+  html, body { scroll-padding-top: none;
+    scroll-margin-top: 6000px;
+    
+  }
+
+  section {
+    scroll-margin-top: calc(-2000px + 200px); /* Adjust this calculation */
+  }
+
+  
+
+}

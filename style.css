@@ -139,7 +139,7 @@ main{
 }
 
 .header .logo span{
- color:rgb(8, 129, 8);
+ color:black;
  font-size: calc(12px * 1.5);
 }
 

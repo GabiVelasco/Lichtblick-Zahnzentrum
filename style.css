@@ -1419,7 +1419,7 @@ a {
     border-style: solid;
     border-width: 10px 10px 10px 0;
     border-color: transparent #007bff transparent transparent;
-    transform: translateY(-50%); /* Rotate the arrow */;
+    transform: translateY(-50%) rotate(180deg); /* Rotate the arrow */;
     align-items: center;
     justify-content:center;
     text-align:center;
@@ -1452,7 +1452,7 @@ a {
       position: static;
       border-width: 0 10px 10px 10px;
       border-color: transparent transparent #007bff transparent;
-      transform: translateY(-50%) rotate(180deg); /* Rotate the arrow */;
+      transform: translateY(-50%) rotate(-180deg); /* Rotate the arrow */;
     }
 
     .footer-flex-container {display:block;}

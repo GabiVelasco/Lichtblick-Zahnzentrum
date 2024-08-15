@@ -109,9 +109,14 @@ main{
     padding:20px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
     
 
 
+}
+
+.logo:hover {
+  transform:scale(1.12);
 }
 
 .header .logo img {
@@ -273,7 +278,7 @@ nav ul li a:hover {
 
     .footer-container {
         padding: 10px;
-        background-color: rgb(17, 21, 46);
+        background-color:#007BFF;
         text-align: center;
         height:fit-content;
         font-size: 16px;
@@ -284,7 +289,6 @@ nav ul li a:hover {
         width:100%;
         height: fit-content;
         padding: 40px 0 40px 0;
-        
         background-color: #b6e5eb74;
 
     }
@@ -448,7 +452,6 @@ nav ul li a:hover {
 
 .titles-container {
   display: block;
- 
   position:relative;
   width:100%;
   justify-content:center;
@@ -1279,20 +1282,29 @@ a {
   align-items: center;
   justify-content:center;
   text-align:center;
-  
+  transition: transform 0.3s ease-in-out;
   position: relative;
 }
 
+.infos-image a:hover, .contact-links a:hover, .e-mail-link a:hover {
+  transform:scale(1.12);
+}
 
-.infos-image img, .contact-links img, .e-mail-link img  {
+
+.infos-image img, .contact-links img, .e-mail-link img, .arrow  {
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
   align-items: center;
   justify-content:center;
   text-align:center;
- 
   position: relative;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.infos-image img:hover, .contact-links img:hover, .e-mail-link img:hover, .arrow:hover  {
+  transform:scale(1.05);
 
 }
 
@@ -1303,19 +1315,26 @@ a {
     border-style: solid;
     border-width: 10px 10px 10px 0;
     border-color: transparent #007bff transparent transparent;
-    transform: translateY(-50%) rotate(180deg); /* Rotate the arrow */;
+    transform: translateY(-50%); /* Rotate the arrow */;
     align-items: center;
     justify-content:center;
     text-align:center;
     position: relative;
     margin-top:25px;
+    transition: transform 0.3s ease-in-out;
+    display:block;
    
+}
+
+.arrow:hover  {
+  transform:scale(1.12);
+
 }
 
 @media (max-width: 960px) {
   .contact-links {
       text-align: center;
-      margin-top: 20px;
+      
   }
   
   .email-link {
@@ -1327,11 +1346,10 @@ a {
   
   .arrow {
       position: static;
-      margin-top: 5px;
       border-width: 0 10px 10px 10px;
       border-color: transparent transparent #007bff transparent;
-      transform: none;
-  }
+      transform: translateY(-50%) rotate(180deg); /* Rotate the arrow */;
+    }
 }
 
 /* creating Contact Session END */

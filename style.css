@@ -282,6 +282,7 @@ nav ul li a:hover {
         text-align: center;
         height:fit-content;
         font-size: 16px;
+        display:block;
     }
 
     .socialmedia-container h1, .phone-container h1 , .email-container h1, .adress-container h1{
@@ -292,10 +293,12 @@ nav ul li a:hover {
     .socialmedia-container {
         text-align: center;
         width:100%;
-        height: fit-content;
-        padding: 40px 0 40px 0;
-        background-color: #b6e5eb74;
         font-weight:100;
+        align-self: stretch;
+        height:max-content;
+        padding: 80px 0 80px 0;
+        display: table;
+        
 
 
     }
@@ -308,7 +311,7 @@ nav ul li a:hover {
         font-size: 24px;
         transition: transform 0.3s ease-in-out;
         display:inline-block;
-      font-weight:100;
+        font-weight:100;
 
     }
 
@@ -331,11 +334,17 @@ nav ul li a:hover {
       color:#2b808b;
       text-align: center;
       width:100%;
-      height: fit-content;
-      padding: 40px 0 40px 0;
-      background-color: #b6e5eb74;
+      height:100%;
       transition: transform 0.3s ease-in-out;
       font-weight: 100;
+      align-self: stretch;
+      height:max-content;
+      padding: 80px 0 80px 0;
+      align-self: stretch;
+      height:max-content;
+      padding: 80px 0 80px 0;
+      display: table;
+
 
     }
 
@@ -371,7 +380,10 @@ nav ul li a:hover {
     width:100%;
     height: fit-content;
     padding: 20px 0 20px 0;
-    background-color: #b6e5eb74;
+    align-self: stretch;
+    height:max-content;
+    padding: 80px 0 80px 0;
+    display: table;
   }
 
   .adress-container p {
@@ -628,6 +640,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  flex-direction:row;
 }
 
 .flex-item-left {
@@ -1271,6 +1284,27 @@ a {
   flex-direction: row-reverse;
 }
 
+
+.footer-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-rows: auto auto;
+  background-color: #2b808b;
+  background-color: #b6e5eb74;
+}
+
+.footer-flex-item-left,
+.footer-flex-item-middle,
+.footer-flex-item-right {
+  flex: 1;
+}
+
+.row {
+  flex-direction: row;
+}
+
 /* .infos-image img {
   border-radius: 8px;
 }
@@ -1420,6 +1454,8 @@ a {
       border-color: transparent transparent #007bff transparent;
       transform: translateY(-50%) rotate(180deg); /* Rotate the arrow */;
     }
+
+    .footer-flex-container {display:block;}
 }
 
 /* creating Contact Session END */
@@ -1471,6 +1507,6 @@ a[name] {
     scroll-margin-top: calc(-2000px + 200px); /* Adjust this calculation */
   }
 
-  
+  .socialmedia-container, .phone-container, .email-container, .adress-container {display:block; flex-direction: column;}
 
 }

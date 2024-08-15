@@ -98,7 +98,8 @@ main{
     border-bottom: 1px solid #ddd;
     width: 100%;
     height: fit-content;
-    background-color:#d2e0d721;
+    background-color: #b6e5eb74;
+
 }
 
 .header .logo {
@@ -143,7 +144,10 @@ main{
  font-size: calc(12px * 1.5);
 }
 
-.logotext { display:block; margin-left:0; justify-content: space-between;
+.logotext { 
+  display:block; 
+  margin-left:0; 
+  justify-content: space-between;
   align-items: left;}
 
 
@@ -197,7 +201,7 @@ nav {
     width: 100%;
     z-index: 2;
     margin-top: -200px; /* Adjust this value to match your header's height */
-  padding-top: 200px; /* Add this to maintain the original layout */
+    padding-top: 200px; /* Add this to maintain the original layout */
 }
 
 nav ul {
@@ -280,8 +284,8 @@ nav ul li a:hover {
         width:100%;
         height: fit-content;
         padding: 40px 0 40px 0;
-        background-color:#c1d8ca00;
-
+        
+        background-color: #b6e5eb74;
 
     }
 
@@ -312,7 +316,7 @@ nav ul li a:hover {
       width:100%;
       height: fit-content;
       padding: 40px 0 40px 0;
-      background-color:#d2e0d700;
+      background-color: #b6e5eb74;
 
    
   

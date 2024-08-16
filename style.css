@@ -236,7 +236,8 @@ nav ul li a:hover {
 }
 
 
-.content-section { display:none;}
+.content-section { display:none;  padding:0;
+  margin:0;}
 
 :target {
   display: block;
@@ -296,7 +297,7 @@ nav ul li a:hover {
         font-weight:100;
         align-self: stretch;
         height:max-content;
-        padding: 20px 0 20px 0;
+        padding: 40px 0 80px 0;
         display: table;
 
     }
@@ -312,7 +313,7 @@ nav ul li a:hover {
 
     }
 
-    .socialmedia-container p,  .phone-container p{
+    .socialmedia-container p{
       margin: 0 10px;
       color:#2b808b;
       font-size: 24px;
@@ -346,6 +347,17 @@ nav ul li a:hover {
       color:#2b808b;
       font-size: 32px;
       transition: color 0.3s;
+     
+      font-weight:100;
+
+
+    }
+
+    .phone-container p {
+      margin: 0 10px;
+      color:#2b808b;
+      font-size: 20px;
+      transition: color 0.3s;
       padding: 10px 0 10px 0;
       font-weight:100;
 
@@ -354,7 +366,7 @@ nav ul li a:hover {
 
     .phone-container a{
       color:#2b808b;
-      font-size: 25px;
+      font-size: 20px;
       display: block;
       padding: 20px 0 20px 0;
       font-weight: 100;
@@ -366,6 +378,7 @@ nav ul li a:hover {
     .phone-container img {
       color:#2b808b;
       transition: transform 0.3s ease-in-out;
+      padding: 20px 0 20px 0;
     }
 
     .phone-container img:hover,  .phone-container a:hover  {
@@ -1139,6 +1152,8 @@ section .directions {
   align-items:center;
   display: block;
   width:50%;
+  padding:0;
+  margin:0;
   
 
   
@@ -1506,4 +1521,14 @@ a[name] {
 
   .socialmedia-container, .phone-container, .email-container, .adress-container {display:block; flex-direction: column;}
 
+  .visible {display:none; margin:0 auto;
+  visibility: hidden;}
+
+  .paragraph {display: block; margin:0 auto;}
+
 }
+
+.paragraph{display: inline-block; margin:0 auto;   color:#2b808b;}
+
+.visible br{display: inline-block; margin:0 auto;
+  visibility:visible;}

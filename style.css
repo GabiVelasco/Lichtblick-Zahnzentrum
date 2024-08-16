@@ -296,14 +296,11 @@ nav ul li a:hover {
         font-weight:100;
         align-self: stretch;
         height:max-content;
-        padding: 80px 0 80px 0;
+        padding: 20px 0 20px 0;
         display: table;
-        
-
 
     }
 
-    
 
     .socialmedia-container a {
         margin: 0 10px;
@@ -315,7 +312,7 @@ nav ul li a:hover {
 
     }
 
-    .socialmedia-container p {
+    .socialmedia-container p,  .phone-container p{
       margin: 0 10px;
       color:#2b808b;
       font-size: 24px;
@@ -338,24 +335,28 @@ nav ul li a:hover {
       transition: transform 0.3s ease-in-out;
       font-weight: 100;
       align-self: stretch;
-      height:max-content;
-      padding: 80px 0 80px 0;
-      align-self: stretch;
-      height:max-content;
-      padding: 80px 0 80px 0;
+      padding: 20px 0 20px 0;
       display: table;
 
 
     }
 
-    .phone-container p, .phone-container a, .phone-container h1{
+    .phone-container h1 {
       margin: 0 10px;
       color:#2b808b;
-      font-size: 25px;
+      font-size: 32px;
       transition: color 0.3s;
-      display: block;
       padding: 10px 0 10px 0;
-      margin:10px;
+      font-weight:100;
+
+
+    }
+
+    .phone-container a{
+      color:#2b808b;
+      font-size: 25px;
+      display: block;
+      padding: 20px 0 20px 0;
       font-weight: 100;
       transition: transform 0.3s ease-in-out;
 
@@ -379,10 +380,8 @@ nav ul li a:hover {
     text-align: center;
     width:100%;
     height: fit-content;
-    padding: 20px 0 20px 0;
     align-self: stretch;
-    height:max-content;
-    padding: 80px 0 80px 0;
+    padding: 20px 0 20px 0;
     display: table;
   }
 
@@ -394,7 +393,6 @@ nav ul li a:hover {
 
 
     .email-container {
-      background-color: white;
       text-align: center;
       width:100%;
       height: fit-content;
@@ -417,13 +415,12 @@ nav ul li a:hover {
 
     
       .email-container p {
-      margin: 0 10px;
       color:#2b808b;
       font-size: 18px;
       transition: color 0.3s;
       transition: transform 0.3s ease-in-out;
       display: block;
-      padding: 10px 0 10px 0;
+    
   }
 
   .no-effect { transition:none;

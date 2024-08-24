@@ -1100,7 +1100,7 @@ ul.menu li a:hover {
       position: absolute;
       right: 20px;
       top: 20px;
-  }
+  } }
 
   /* Media query for screens smaller than 960px */
   @media (max-width: 960px) {
@@ -1132,7 +1132,7 @@ ul.menu li a:hover {
   }
 
 
-}
+
 
 .content-section:target {
   display: block;

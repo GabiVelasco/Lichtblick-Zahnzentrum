@@ -519,7 +519,7 @@ nav ul li a:hover {
 
 .star {
   position: absolute;
-  background: radial-gradient(circle, #efeff0 0%, #071a81 100%);
+  background: radial-gradient(circle, #ffffff 0%,  #2b808b 100%);
   border-radius: 50%;
   width: 8px;
   height: 8px;

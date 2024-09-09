@@ -40,7 +40,7 @@ The Lichtblick Zahnzentrum website offers a comprehensive view of the dental cli
 
 ## File Structure
 
-
+'''
 lichtblick-zahnzentrum/
 │
 ├── index.html                # Homepage with general information
@@ -58,7 +58,7 @@ lichtblick-zahnzentrum/
 │   ├── clinic-setup.jpg      # Image of modern clinic setup
 │   └── appointment.png       # Image for appointment booking
 └── README.md                 # This readme file
-
+'''
 
 ## How to Use
 

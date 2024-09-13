@@ -5,6 +5,8 @@
 
 # Lichtblick Zahnzentrum Website
 
+https://gabivelasco.github.io/Lichtblick-Zahnzentrum/
+
 This is a static website project for Lichtblick Zahnzentrum, created by the web developer Gabriela Velasco. The website is designed to provide comprehensive information about the dental clinic, including its services, team, location, and contact details. The site also features functionalities for booking appointments and accessing essential privacy and legal information.
 
 Welcome to the Lichtblick Zahnzentrum website repository. This project represents the online presence of the Lichtblick dental clinic, providing visitors with detailed information about the clinic, job opportunities, directions, and appointment booking options.

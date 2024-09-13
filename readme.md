@@ -40,7 +40,12 @@ The Lichtblick Zahnzentrum website offers a comprehensive view of the dental cli
 
 ## File Structure
 
-'''
+Got it! Here’s the updated file structure section in Markdown format:
+
+```markdown
+## File Structure
+
+
 lichtblick-zahnzentrum/
 │
 ├── index.html                # Homepage with general information
@@ -51,14 +56,16 @@ lichtblick-zahnzentrum/
 ├── privacy-policy.html       # Privacy policy page
 ├── legal-notice.html         # Legal notice page
 ├── style.css                 # Main stylesheet
-├── img/                      # Images used in the website
+├── img/                      # Images used on the website
 │   ├── dentist-job1.jpg      # Image for dentist job posting
 │   ├── reception-job.jpg     # Image for reception job posting
 │   ├── clinic-room.jpg       # Image of clinic rooms
 │   ├── clinic-setup.jpg      # Image of modern clinic setup
 │   └── appointment.png       # Image for appointment booking
-└── README.md                 # This readme file
-'''
+└── README.md                 # This README file
+
+```
+
 
 ## How to Use
 
